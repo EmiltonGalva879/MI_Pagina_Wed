@@ -1,0 +1,214 @@
+:root {
+    --bg-main: #ffffff;
+    --bg-card: #d98f8f;
+    --bg-header: #5c4d5c;
+    --accent: rgb(100, 58, 229);
+
+    --text-main: #0a1b32;
+    --text-muted: #0f2d68;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: var(--bg-header);
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: var(--accent);
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* TARJETAS */
+.card {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+/* FOTO */
+.foto-perfil {
+    width: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+
+/* LISTA */
+.lista {
+    list-style: none;
+}
+
+.lista li {
+    margin-bottom: 0.5rem;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+/* FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.formulario input {
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.formulario button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* MENÚ */
+    .menu {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 0.6rem;
+        background: rgba(255,255,255,0.4);
+        border-radius: 8px;
+    }
+
+    /* CONTENEDOR */
+    .container {
+        margin: 2rem auto;
+    }
+
+    /* TARJETAS */
+    .card {
+        padding: 1.5rem;
+    }
+
+    /* FOTO PERFIL */
+    .foto-perfil {
+        width: 120px;
+        margin: 0.8rem auto;
+        display: block;
+    }
+
+    /* TABLA */
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    background-color: #06752f;
+    color: rgb(23, 22, 22);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-whatsapp:hover {
+    opacity: 0.9;
+}
